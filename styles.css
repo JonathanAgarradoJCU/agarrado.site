@@ -15,7 +15,7 @@ body {
 
 /* Styling for the container */
 .container {
-    background-color: rgba(236, 115, 15, 0.8); /* 80% transparent background */
+    background-color: rgba(236, 115, 15, 0.35); /* 35% transparent background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Optional shadow for a subtle 3D effect */
     color: white; /* White text color for contrast */
