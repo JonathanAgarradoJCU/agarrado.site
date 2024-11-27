@@ -11,7 +11,6 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the image fixed during scrolling */
-    flex-direction: column; /* Stacks the elements vertically */
 }
 
 /* Styling for the container */
@@ -20,9 +19,6 @@ body {
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Optional shadow for a subtle 3D effect */
     color: white; /* White text color for contrast */
-
-    margin: 130px; /*TODO: REMOVE WHEN UNNECESSARY. This is for giving space between container and footer for effect.*/
-
     padding: 20px 40px; /* Add space around the text */
     text-align: center; /* Center-align text inside the container */
     font-family: 'Comfortaa', Arial, sans-serif; /* Use 'Comfortaa' for the container */
@@ -38,15 +34,16 @@ body {
 /* Footer styling */
 footer {
     width: 100%; /* Full width */
-    background-color: rgba(0, 0, 0, 0.5); /* Dark background for footer */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for footer */
     color: white; /* White text */
     text-align: center; /* Center the text */
     padding: 10px 0; /* Add some space above and below the text */
-    position: relative; /* Position the footer at the bottom */
+    position: absolute; /* Position the footer at the bottom of the page */
     bottom: 0; /* Stick it to the bottom */
 }
 
+/* Footer paragraph styling */
 footer p {
     margin: 0; /* Remove any default margin */
-    font-size: 12px; /* Smaller font size for footer text */
+    font-size: 14px; /* Smaller font size for footer text */
 }
