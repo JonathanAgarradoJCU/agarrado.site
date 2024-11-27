@@ -1,0 +1,21 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Optional background for better visibility */
+  }
+  
+  /* Styling for the container */
+  .container {
+    background-color: rgba(0, 0, 0, 0.7); /* 80% transparent black background */
+    color: white; /* White text color for contrast */
+    padding: 20px 40px; /* Add space around the text */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center; /* Center-align text inside the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle 3D effect */
+  }
+  
