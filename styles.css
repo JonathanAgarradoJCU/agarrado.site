@@ -11,11 +11,15 @@ body {
   
   /* Styling for the container */
   .container {
-    background-color: rgba(0, 0, 0, 0.7); /* 80% transparent black background */
+    background-color: rgba(236, 115, 15, 0.8); /* 80% transparent black background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Optional shadow for a subtle 3D effect */
     color: white; /* White text color for contrast */
     padding: 20px 40px; /* Add space around the text */
-    border-radius: 15px; /* Rounded corners */
     text-align: center; /* Center-align text inside the container */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle 3D effect */
+  }
+
+  .container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow: x-offset, y-offset, blur-radius, color */
   }
   
