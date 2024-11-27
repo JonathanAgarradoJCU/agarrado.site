@@ -5,21 +5,24 @@ body {
     align-items: center;
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default body margin */
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Set 'Poppins' as the default font */
     background-color: #f4f4f4; /* Optional background for better visibility */
-  }
-  
-  /* Styling for the container */
-  .container {
+}
+
+/* Styling for the container */
+.container {
     background-color: rgba(236, 115, 15, 0.8); /* 80% transparent black background */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Optional shadow for a subtle 3D effect */
     color: white; /* White text color for contrast */
     padding: 20px 40px; /* Add space around the text */
     text-align: center; /* Center-align text inside the container */
-  }
+    font-family: 'Comfortaa', Arial, sans-serif; /* Use 'Comfortaa' for the container */
+}
 
-  .container h1 {
+/* Styling for the header text */
+.container h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow: x-offset, y-offset, blur-radius, color */
-  }
-  
+    font-family: 'Poppins', Arial, sans-serif; /* Use 'Poppins' for the header */
+    font-weight: 700; /* Bold text */
+}
