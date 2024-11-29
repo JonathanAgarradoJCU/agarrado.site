@@ -1,12 +1,12 @@
 /* General body styling */
 body {
-    display: flex;
+    display: block;
     flex-direction: column; /* Stack the header, navbar, and footer vertically */
     justify-content: space-between;
     height: 100vh; /* Full viewport height */
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(''); /* Replace with your image */
+    background-image: url('images/Family FB PFPs/Roy_FB_pfp.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
