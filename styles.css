@@ -107,7 +107,7 @@ footer {
     color: white; /* White text */
     text-align: center; /* Center the text */
     padding: 10px 0; /* Add some space above and below the text */
-    position: absolute; /* Position the footer at the bottom of the page */
+    position: fixed; /* Changed from absolute to fixed */
     bottom: 0; /* Stick it to the bottom */
 }
 
