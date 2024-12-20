@@ -131,7 +131,7 @@ footer p {
     filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
 }
 
-@media screen and (max-width: 1043px) {
+@media screen and (max-width: 1070px) {
     #logo {
     position: fixed;
     top: 35px;
