@@ -4,6 +4,13 @@
     font-family: Inter;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
 ul {
     list-style: none;
     background: #22438C;
