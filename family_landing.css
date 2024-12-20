@@ -4,6 +4,18 @@
     font-family: Inter;
 }
 
+#logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    width: 350px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    background: #2b2e418e; /* Matches nav background with transparency */
+    border-radius: 50%; /* Creates circular shape */
+    padding: 0px; /* Adds space between logo and circle edge */
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
+
 nav {
     position: fixed;
     top: 0;
@@ -22,7 +34,7 @@ ul {
 ul li {
     display: inline-block;
     position: relative;
-    background: #22438C;
+    background: #2b2e41a9;
 }
 
 nav ul li:first-child {
@@ -45,7 +57,7 @@ ul li a {
 
 ul li ul.dropdown li {
     display: block;
-    width: 200px;
+    width: 75%;
 }
 
 ul li ul.dropdown li:last-child {
@@ -65,7 +77,7 @@ ul li ul.dropdown {
 }
 
 ul li a:hover {
-    background: #112c66;
+    background: #2b2e4170;
     border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
     border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
 }
