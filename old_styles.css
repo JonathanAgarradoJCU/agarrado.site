@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif;
+    background-image: url('images/canva_agarrado_family_HD_raised.png'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+}
+
+/* Styling for the container */
+.container {
+    background-color: rgba(236, 115, 15, 0.35); /* 35% transparent background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Optional shadow for a subtle 3D effect */
+    color: white; /* White text color for contrast */
+    padding: 20px 40px; /* Add space around the text */
+    text-align: center; /* Center-align text inside the container */
+    font-family: 'Comfortaa', Arial, sans-serif; /* Use 'Comfortaa' for the container */
+}
+
+/* Styling for the header text */
+.container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow: x-offset, y-offset, blur-radius, color */
+    font-family: 'Poppins', Arial, sans-serif; /* Use 'Poppins' for the header */
+    font-weight: 700; /* Bold text */
+}
+
+/* Footer styling */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some space above and below the text */
+    position: absolute; /* Position the footer at the bottom of the page */
+    bottom: 0; /* Stick it to the bottom */
+}
+
+/* Footer paragraph styling */
+footer p {
+    margin: 0; /* Remove any default margin */
+    font-size: 14px; /* Smaller font size for footer text */
+}
+
+/* Navbar container styling */
+.navbar {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    justify-content: space-around; /* Optional: Space items evenly */
+    align-items: center; /* Align items vertically in the middle */
+    background-color: #333; /* Navbar background color */
+    padding: 10px 20px; /* Add some spacing inside the navbar */
+}
+
+/* Navbar item styling */
+.navbar div {
+    color: white; /* Text color */
+    padding: 10px 20px; /* Add spacing around each item */
+    text-align: center; /* Center-align the text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.navbar div:hover {
+    background-color: #555; /* Change background on hover */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
