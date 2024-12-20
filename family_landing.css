@@ -43,6 +43,8 @@ ul li ul.dropdown {
     display: none;
     left: 0;
     top: 100%;
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
 }
 
 ul li a:hover {
