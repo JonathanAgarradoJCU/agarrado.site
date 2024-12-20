@@ -163,7 +163,7 @@ footer p {
         display: none;
     }
 
-    .hamburger {
+    .hamburger { /* FIX: Hamburger menu icon */
         display: block;
         position: fixed;
         top: 20px;
