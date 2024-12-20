@@ -17,12 +17,20 @@ nav ul {
 
 ul {
     list-style: none;
-    background: #22438C;
 }
 
 ul li {
     display: inline-block;
     position: relative;
+    background: #22438C;
+}
+
+nav ul li:first-child {
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+}
+
+nav ul li ul li:first-child {
+    border-bottom-left-radius: 0px;  /* dropdown radius bottom-left corner straightened TO AVOID HAVING THE FIRST FIRST-CHILD COPIED. */
 }
 
 ul li a {
@@ -31,7 +39,8 @@ ul li a {
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
-   font-size: 18px; 
+   font-size: 18px;
+   
 }
 
 ul li ul.dropdown li {
@@ -39,9 +48,13 @@ ul li ul.dropdown li {
     width: 200px;
 }
 
+ul li ul.dropdown li:last-child {
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
+}
+
 ul li ul.dropdown {
     width: 200px;
-    background: #22438C;
     position: absolute;
     z-index: 999;
     display: none;
@@ -53,6 +66,8 @@ ul li ul.dropdown {
 
 ul li a:hover {
     background: #112c66;
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
 }
 
 ul li:hover ul.dropdown {
