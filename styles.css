@@ -7,21 +7,23 @@
 
 #logo {
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 1.5%;
+    left: 1.05%;
     z-index: 1000;
     width: 350px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
     border-radius: 50%; /* Creates circular shape */
     padding: 0px; /* Adds space between logo and circle edge */
-    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
+}
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
 }
 nav ul {
     display: flex;
@@ -137,8 +139,8 @@ footer p {
 @media (max-width: 1173px) {
     #logo {
     position: fixed;
-    top: 21px;
-    left: 21px;
+    top: 1.5%;
+    left: 1.05%;
     z-index: 1000;
     width: 300px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
@@ -151,8 +153,8 @@ footer p {
 @media (max-width: 1070px) {
     #logo {
     position: fixed;
-    top: 35px;
-    left: 35px;
+    top: 1.5%;
+    left: 1.05%;
     z-index: 1000;
     width: 225px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
@@ -206,11 +208,10 @@ footer p {
 
 @media (min-width: 1538px) {
     body {
-        /* ... other properties ... */
-        background-image: url('images/canva_agarrado_family_HD_raised.png');
-        background-size: contain; /* Change from cover to contain */
-        background-position: center;
-        background-repeat: repeat;
-        background-attachment: fixed;
+        background-color: rgb(204, 204, 204); /* Semi-transparent dark background overlay */
+        background-image: url('images/canva_agarrado_family_HD_raised.png'); /* Set the background image */
+        background-size: contain; /* Scale image to fit while maintaining aspect ratio */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Keep background fixed during scrolling */
     }
 }
