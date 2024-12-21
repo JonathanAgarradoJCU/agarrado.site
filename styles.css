@@ -162,14 +162,14 @@ footer p {
     filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
 }
 
-@media (max-width: 928px) {
+@media screen and (max-width: 928px) {
     #logo {
     position: fixed;
-    top: 300px;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
-    width: 475px; /* Adjust this value to make the logo smaller */
+    width: 80%; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
     border-radius: 50%; /* Creates circular shape */
