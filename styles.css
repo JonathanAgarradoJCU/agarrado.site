@@ -202,5 +202,15 @@ footer p {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
 
+@media (min-width: 1538px) {
+    body {
+        /* ... other properties ... */
+        background-image: url('images/canva_agarrado_family_HD_raised.png');
+        background-size: contain; /* Change from cover to contain */
+        background-position: center;
+        background-repeat: repeat;
+        background-attachment: fixed;
+    }
 }
