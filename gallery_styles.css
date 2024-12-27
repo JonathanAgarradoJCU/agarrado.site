@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+#logo {
+    position: fixed;
+    top: 1.5%;
+    left: 1.05%;
+    z-index: -1;
+    width: 350px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    background: #2b2e418e; /* Matches nav background with transparency */
+    border-radius: 50%; /* Creates circular shape */
+    padding: 0px; /* Adds space between logo and circle edge */
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
+}
+
+.img-gallery {
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 1.6px solid white;
+}
+
+.img-gallery img:hover {
+    transform: scale(0.8) rotate(-7deg);
+    border-radius: 20px;
+    outline: 1.6px dotted white;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    z-index: 100;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 100;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+    background: #2b2e41a9;
+}
+
+nav ul li:first-child {
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+}
+
+nav ul li ul li:first-child {
+    border-bottom-left-radius: 0px;  /* dropdown radius bottom-left corner straightened TO AVOID HAVING THE FIRST FIRST-CHILD COPIED. */
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+   
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 75%;
+}
+
+ul li ul.dropdown li:last-child {
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
+}
+
+ul li ul.dropdown {
+    width: 200px;
+    position: absolute;
+    z-index: 0;
+    display: none;
+    left: 0;
+    top: 100%;
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
+}
+
+ul li a:hover {
+    background: #2b2e4170;
+    border-bottom-left-radius: 12px;  /* dropdown radius bottom-left corner rounded */
+    border-bottom-right-radius: 12px; /* dropdown radius bottom-right corner rounded */
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFFFFF;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif;
+    background-image: url('images/canva_agarrado_family_HD_raised.png');
+    backdrop-filter: blur(3px); /* Adds 3% blur effect */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+}
+
+/* Footer styling */
+footer {
+    width: 100%; /* Full width */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Add some space above and below the text */
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 0; /* Stick it to the bottom */
+}
+
+/* Footer paragraph styling */
+footer p {
+    margin: 0; /* Remove any default margin */
+    font-size: 14px; /* Smaller font size for footer text */
+}
+
+@media (max-width: 1173px) {
+    #logo {
+    position: fixed;
+    top: 1.5%;
+    left: 1.05%;
+    z-index: 0;
+    width: 300px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    background: #2b2e418e; /* Matches nav background with transparency */
+    border-radius: 50%; /* Creates circular shape */
+    padding: 0px; /* Adds space between logo and circle edge */
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
+}
+
+@media (max-width: 1070px) {
+    #logo {
+    position: fixed;
+    top: 1.5%;
+    left: 1.05%;
+    z-index: -1;
+    width: 225px; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    background: #2b2e418e; /* Matches nav background with transparency */
+    border-radius: 50%; /* Creates circular shape */
+    padding: 0px; /* Adds space between logo and circle edge */
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
+}
+
+@media screen and (max-width: 928px) {
+    #logo {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 80%; /* Adjust this value to make the logo smaller */
+    height: auto; /* Maintains aspect ratio */
+    background: #2b2e418e; /* Matches nav background with transparency */
+    border-radius: 50%; /* Creates circular shape */
+    padding: 0px; /* Adds space between logo and circle edge */
+    filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))}
+
+    #nav-bar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 21px;
+        right: 21px;
+        width: 50px;
+        height: 50px;
+        background: #2b2e418e; /* Matches nav background with transparency */
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+@media (min-width: 1538px) {
+    body {
+        background-color: rgb(204, 204, 204); /* Semi-transparent dark background overlay */
+        background-image: url('images/canva_agarrado_family_HD_raised.png'); /* Set the background image */
+        backdrop-filter: blur(3px); /* Adds 3% blur effect */
+        background-size: contain; /* Scale image to fit while maintaining aspect ratio */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Keep background fixed during scrolling */
+    }
+}
