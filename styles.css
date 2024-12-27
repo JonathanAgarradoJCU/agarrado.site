@@ -9,7 +9,7 @@
     position: fixed;
     top: 1.5%;
     left: 1.05%;
-    z-index: 1000;
+    z-index: 1;
     width: 350px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
@@ -18,11 +18,62 @@
     filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
 }
 
+.img-gallery {
+    width: 80%;
+    margin:100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 1.6px solid white;
+}
+
+.img-gallery img:hover {
+    transform: scale(0.8) rotate(-7deg);
+    border-radius: 20px;
+    outline: 1.6px dotted white;
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 2;
+}
+
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 0;
     filter: drop-shadow(16px 16px 20px rgba(0, 0, 0, 0.645))
 }
 nav ul {
@@ -71,7 +122,7 @@ ul li ul.dropdown li:last-child {
 ul li ul.dropdown {
     width: 200px;
     position: absolute;
-    z-index: 999;
+    z-index: 0;
     display: none;
     left: 0;
     top: 100%;
@@ -141,7 +192,7 @@ footer p {
     position: fixed;
     top: 1.5%;
     left: 1.05%;
-    z-index: 1000;
+    z-index: 0;
     width: 300px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
@@ -155,7 +206,7 @@ footer p {
     position: fixed;
     top: 1.5%;
     left: 1.05%;
-    z-index: 1000;
+    z-index: 1;
     width: 225px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
@@ -170,7 +221,7 @@ footer p {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1000;
+    z-index: 1;
     width: 80%; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */

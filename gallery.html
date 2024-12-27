@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agarrado Family Website</title>
-        <link rel="stylesheet" href="styles_gallery.css">
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Inter font -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Inter font -->
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"> <!-- Inter font -->
@@ -35,20 +35,24 @@
     </nav>
 
     <body>
+        <div class="full-img" id="fullImgBox">
+            <img src="images/img_01.jpg" id="fullImg" alt="Image 1">
+            <span onclick="openFullImg()">×</span>
+        </div>
         <div class="container">
             <div class="img-gallery">
-                <img src="images/img_01.jpg" alt="Image 1" class="gallery-image">
-                <img src="images/img_02.png" alt="Image 2" class="gallery-image">
-                <img src="images/img_03.png" alt="Image 3" class="gallery-image">
-                <img src="images/img_04.png" alt="Image 4" class="gallery-image">
-                <img src="images/img_05.png" alt="Image 5" class="gallery-image">
-                <img src="images/img_06.png" alt="Image 6" class="gallery-image">
-                <img src="images/img_07.png" alt="Image 7" class="gallery-image">
-                <img src="images/img_08.png" alt="Image 8" class="gallery-image">
-                <img src="images/img_09.png" alt="Image 9" class="gallery-image">
-                <img src="images/img_10.png" alt="Image 10" class="gallery-image">
-                <img src="images/img_11.png" alt="Image 11" class="gallery-image">
-                <img src="images/img_12.png" alt="Image 12" class="gallery-image">
+                <img src="images/img_01.jpg" alt="Image 1" onclick="openFullImg()">
+                <img src="images/img_02.png" alt="Image 2" onclick="openFullImg()">
+                <img src="images/img_03.png" alt="Image 3" onclick="openFullImg()">
+                <img src="images/img_04.png" alt="Image 4" onclick="openFullImg()">
+                <img src="images/img_05.png" alt="Image 5" onclick="openFullImg()">
+                <img src="images/img_06.png" alt="Image 6" onclick="openFullImg()">
+                <img src="images/img_07.png" alt="Image 7" onclick="openFullImg()">
+                <img src="images/img_08.png" alt="Image 8" onclick="openFullImg()">
+                <img src="images/img_09.png" alt="Image 9" onclick="openFullImg()">
+                <img src="images/img_10.png" alt="Image 10" onclick="openFullImg()">
+                <img src="images/img_11.png" alt="Image 11" onclick="openFullImg()">
+                <img src="images/img_12.png" alt="Image 12" onclick="openFullImg()">
             </div>
         </div>
 
