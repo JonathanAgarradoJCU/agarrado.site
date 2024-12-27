@@ -1,2 +1,11 @@
-// Currently, no functionality is required, but you can add interactivity here if needed.
-console.log("JavaScript is linked and ready!");
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closeFullImg() {
+    fullImgBox.style.display = "none";
+}
