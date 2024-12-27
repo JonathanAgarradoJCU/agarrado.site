@@ -9,7 +9,7 @@
     position: fixed;
     top: 1.5%;
     left: 1.05%;
-    z-index: 1;
+    z-index: -1;
     width: 350px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
@@ -206,7 +206,7 @@ footer p {
     position: fixed;
     top: 1.5%;
     left: 1.05%;
-    z-index: 1;
+    z-index: -1;
     width: 225px; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
@@ -221,7 +221,7 @@ footer p {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: -1;
     width: 80%; /* Adjust this value to make the logo smaller */
     height: auto; /* Maintains aspect ratio */
     background: #2b2e418e; /* Matches nav background with transparency */
