@@ -55,7 +55,6 @@
 .full-img img {
     width: 90%;
     max-width: 500px;
-    border-radius: 15px;
     z-index: 100;
 }
 
